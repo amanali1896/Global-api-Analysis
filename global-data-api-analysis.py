@@ -11,3 +11,5 @@ results = request.json() #converts the variable to a json format, and that is ho
 print(json.dumps(results, sort_keys=True, indent = 4))
 #.dumps converts the result to a string. sort_keys is made true so that the keys are coming in a sorted order
 #indent is made equal to 4 spaces because it prints it in an indented format
+active_currencies = results['data']['active_cryptocurrencies']
+#accessing the value of  results, we first go to the "Data"&then to its respective field in json
